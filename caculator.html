@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        caculator
+    </title>
+    <style>
+        html {
+            height: 100%;
+        }
+        
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .shell {
+            display: flex;
+            flex-wrap: wrap;
+            width: 30em;
+            height: 45em;
+        }
+        
+        .display {
+            width: 100%;
+            background-color: black;
+            font-size: 40px;
+            color: white;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            padding-right: 10px;
+            height: 25%;
+        }
+        
+        .number {
+            background-color: #ebebeb;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            box-sizing: border-box;
+            border-bottom: 1px solid white;
+            border-right: 1px solid white;
+            height: 15%;
+        }
+        
+        .operator {
+            background-color: #de9753;
+            width: 25%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: larger;
+            box-sizing: border-box;
+            border-bottom: 1px solid white;
+            color: white;
+            height: 15%;
+        }
+        
+        .clear {
+            width: 50%;
+        }
+        
+        .zero {
+            width: 75%;
+        }
+        
+        .number:hover,
+        .operator:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div class="display">
+
+        </div>
+        <div class="number clear">
+            C
+        </div>
+        <div class="number backspace">
+            ←
+        </div>
+        <div class="p operator divide">
+            ÷
+        </div>
+
+        <div class=" number seven">
+            7
+        </div>
+        <div class=" number eight">
+            8
+        </div>
+        <div class=" number nine">
+            9
+        </div>
+        <div class=" operator multiply">
+            ×
+        </div>
+        <div class=" number four">
+            4
+        </div>
+        <div class=" number five">
+            5
+        </div>
+        <div class=" number six">
+            6
+        </div>
+        <div class=" operator minus">
+            -
+        </div>
+        <div class=" number one">
+            1
+        </div>
+        <div class=" number two">
+            2
+        </div>
+        <div class=" number three">
+            3
+        </div>
+        <div class=" operator plus">
+            +
+        </div>
+        <div class=" number zero">
+            0
+        </div>
+
+        <div class="operator equal">
+            =
+        </div>
+
+
+
+    </div>
+    <script>
+        const disp = document.querySelector(".display");
+        const proc = document.querySelector(".shell");
+        proc.addEventListener("click", function(event) {
+            if (event.target.innerText !== "C" && event.target.innerText !== "←" && event.target.innerText !== "=") {
+                disp.innerText = disp.innerText + event.target.innerText;
+            }
+        })
+        document.querySelector(".clear").addEventListener("click", function() {
+            disp.innerText = "";
+        })
+        document.querySelector(".backspace").addEventListener("click", function() {
+            disp.innerText = disp.innerText.substr(0, disp.innerText.length - 1);
+        })
+        document.querySelector(".equal").addEventListener("click", function() {
+
+            disp.innerText = eval(disp.innerText.replace("÷", "/").replace("×", "*"));
+        })
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,76 @@
+.fline {
+    border: 1px solid black;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+
+.container {
+    display: flex;
+}
+
+.fline.ab {
+    flex-grow: 1;
+    flex-basis: 0
+}
+
+.fline.ac {
+    flex-grow: 2;
+    flex-basis: 0
+}
+
+.fline.cd {
+    flex-grow: 1;
+    flex-basis: 0
+}
+
+.fline.ch {
+    flex-grow: 3.07;
+    flex-basis: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.title2 {
+    font-family: "Futura";
+    color: #666666;
+    margin-left: 10px;
+}
+
+.item {
+    flex-grow: 1;
+    width: 100%;
+}
+
+.n1 {
+    background-color: #ffeaa7;
+}
+
+.n2 {
+    background-color: #81ecec;
+}
+
+.n3 {
+    background-color: #55efc4;
+}
+
+.n4 {
+    background-color: #74b9ff;
+}
+
+.n5 {
+    background-color: #a29bfe;
+}
+
+.name {
+    font-family: "Snell Roundhand";
+    text-align: center;
+    font-size: 60px;
+}
+
+.title1 {
+    font-style: italic;
+    text-align: center;
+    font-weight: normal;
+}
