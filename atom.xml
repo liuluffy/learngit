@@ -2,14 +2,14 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://liuluffy.github.io</id>
     <title>SilenceThinking</title>
-    <updated>2020-07-20T10:53:01.432Z</updated>
+    <updated>2021-04-01T08:18:05.340Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://liuluffy.github.io"/>
     <link rel="self" href="https://liuluffy.github.io/atom.xml"/>
     <subtitle>less is more, slow is fast.</subtitle>
     <logo>https://liuluffy.github.io/images/avatar.png</logo>
     <icon>https://liuluffy.github.io/favicon.ico</icon>
-    <rights>All rights reserved 2020, SilenceThinking</rights>
+    <rights>All rights reserved 2021, SilenceThinking</rights>
     <entry>
         <title type="html"><![CDATA[对于知识的思考]]></title>
         <id>https://liuluffy.github.io/post/dui-yu-zhi-shi-de-si-kao/</id>
